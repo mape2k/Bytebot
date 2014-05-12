@@ -35,15 +35,6 @@ BYTEBOT_PLUGINS= [
 ]
 
 BYTEBOT_PLUGIN_CONFIG = {
-    'dates': {
-        'url':      'http://www.google.com/calendar/ical/2eskb61g20prl65k2qd01uktis%40group.calendar.google.com/public/basic.ics',
-    },
-    'messagelogger': {
-        'file':     '/tmp/irc.log'
-    },
-    'usercount': {
-        'file':     '/tmp/irc_user.log'
-    },
     'autoop': {
         'name': {
             '#channelname': [
@@ -56,13 +47,24 @@ BYTEBOT_PLUGIN_CONFIG = {
             ],
         }
     },
-    'spacestatus': {
-        'url': 'http://status.bytespeicher.org/status.json'
+    'brb': {
+        'endpoint': 'http://status.example.org/brb',
+    }
+    'dates': {
+        'url':      'http://www.google.com/calendar/ical/2eskb61g20prl65k2qd01uktis%40group.calendar.google.com/public/basic.ics',
     },
     'ircquestions': {
         'location':   'http://technikkultur-erfurt.de/bytespeicher:anfahrt',
         'dates':      'http://technikkultur-erfurt.de/bytespeicher:veranstaltungen',
         'versorgung': 'http://technikkultur-erfurt.de/bytespeicher:versorgung',
-        
     }
+    'messagelogger': {
+        'file':     '/tmp/irc.log'
+    },
+    'spacestatus': {
+        'url': 'http://status.bytespeicher.org/status.json'
+    },
+    'usercount': {
+        'file':     '/tmp/irc_user.log'
+    },
 }
