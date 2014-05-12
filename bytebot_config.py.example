@@ -21,13 +21,17 @@ BYTEBOT_HTTP_MAXSIZE = 1024 * 1024 * 10
 Enable plugins by writing their lowercase name here
 """
 BYTEBOT_PLUGINS= [
-    'usercount',
-    'messagelogger',
     'autoop',
-    'spacestatus',
-    'ircquestions',
-    'shorturl',
+    'autotopic',
+    'brb',
     'dates',
+    'ircquestions',
+    'messagelogger',
+    'penis',
+    'replace',
+    'shorturl',
+    'spacestatus',
+    'usercount',
 ]
 
 BYTEBOT_PLUGIN_CONFIG = {
