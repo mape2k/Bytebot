@@ -16,7 +16,7 @@ def status(bot, mask, target, args):
 
         bot.privmsg(target, 'Space status:')
         if data['state']['open']:
-            bot.privmsg(target, '\tThe space is open!')
+            bot.privmsg(target, '\tThe space is open! (%s)' % data['status'])
         else:
             bot.privmsg(target, '\tThe space is closed!')
     except Exception as e:
